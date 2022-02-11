@@ -1,0 +1,210 @@
+
+body {
+    width: 375px;
+    height: 100vh;
+    margin: auto;
+    background: #E5E5E5;
+    position: relative;
+}
+.login {    /*tela login*/
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.login img {
+    width: 130px;
+    height: 92px;
+    margin-top: 72px;
+}
+.login imput {
+    width: 260px;
+    height: 54px;
+    margin-top: 94px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #AEAEAE;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login button {
+    width: 109px;
+    height: 45px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #696969;
+    border-radius: 9px;
+    border-style: none;
+    background: #E7E7E7;
+}
+.conteudo {     /*conteudo do chat*/
+    display: unset;
+}
+section {
+    width: 375px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+section img {
+    margin-inline-start: 22px;
+    margin-inline-end: 25.03px;
+}
+.barraConversa {
+    width: 375px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0px;
+}
+.barraConversa div {
+    width: 299px;
+    height: 64px;
+    margin-left: 17px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+p1 {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+}
+p1 span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    color: #AEAEAE;
+}
+.barraConversa img {   /*substituir por link*/
+    width: 26px;
+    height: 26px;
+    margin: auto;
+}
+main {
+    width: 375px;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+}
+
+.opcoes {   /*menu*/
+    width: 375px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+nav {   
+    width: 259px;
+    height: 100vh;
+    background: #FFFFFF;
+    position: absolute;
+    right: 0;
+}
+nav p {
+    width: 259px;
+    height: 66px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+nav div p {
+    height: 84px;
+}
+.grupo {
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.grupo div {
+    width: 259px;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+}
+nav p1 {
+    width: 194px;
+    height: 36px;
+    margin-right: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+nav p1 img {
+    position: absolute;
+    right: 0;
+}
+nav img {
+    margin: auto;
+}
+.visibilidade {
+    width: 259px;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teste {
+    width: 375px;
+    height: 40px;
+    background: #DCDCDC; 
+    display: flex;
+    align-items: center;
+}
+p2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+p2 span {
+    font-weight: 400;
+    color: #AAAAAA;
+}
