@@ -15,15 +15,22 @@
 <body>
     <div class="login">
         <img src="/arquivos_img/logo 1.png" alt="Bate-Papo UOL">
-        <imput>Digite seu nome</imput>
-        <button class="entrar">Entrar</button>
+        <input
+        type="text"
+        class="nome"
+        placeholder="Digite seu nome"
+        />
+        <button class="entrar" onclick="fazerLogin()">Entrar</button>
     </div>
-    <div class="conteudo">
-        <section><img src="/arquivos_img/logo 1.png"><img src="/arquivos_img/Vector.png"></section> <!-- topo fixo -->
-        <main><div class="teste"><p2><span>(xx:xx:xx)</span>teste</p2></div></main>  <!-- conteudo flexbox -->
-        <div class="barraConversa"><div><p1>Escreva aqui...<br>
-            <span>Enviando para Maria (reservadamente)</span></p1></div>
-            <img src="/arquivos_img/Vector5.png">
+    <div class="conteudo remove">
+        <section><img onclick="buscarMensagens()" src="/arquivos_img/logo 1.png"><img src="/arquivos_img/Vector.png"></section> <!-- topo fixo -->
+        <main></main>  
+        <div class="barraConversa"><input   
+            type="text"
+            class="nome"
+            placeholder="Escreva aqui..."
+            />
+            <img onclick="enviarMensagens()" src="/arquivos_img/Vector5.png">
         </div> <!-- barra fixa inferior-->
     </div>
     <div class="opcoes">
@@ -32,15 +39,17 @@
                 <p>Escolha um contato<br>
                     para enviar mensagem:</p>
                 <div class="grupo">
-                    <div><img src="/arquivos_img/Vector(1).png"><p1>Todos</p1></div>
-                    <div><img src="/arquivos_img/Vector(2).png"><p1>Joao<img src="/arquivos_img/Vector4.png"></p1></div>  <!-- usar no js -->
-                    <div><img src="/arquivos_img/Vector(2).png"><p1>Maria</p1></div>  <!-- usar no js -->
+                    <div id="01" onclick="seleciona()"><img src="/arquivos_img/Vector(1).png"><p1>Todos</p1></div>
+                    <div onclick="seleciona()"><img src="/arquivos_img/Vector(2).png"><p1>Joao<img src="/arquivos_img/Vector4.png"></p1></div>  <!-- usar no js -->
+                    <div onclick="seleciona()"><img src="/arquivos_img/Vector(2).png"><p1>Maria</p1></div>  <!-- usar no js -->
                 </div>
             </div>
             <p>Escolha a visibilidade:</p>
-            <div class="visibilidade"><img src="/arquivos_img/Vector(3).png"><p1>Público<img src="/arquivos_img/Vector4.png"></p1></div>
-            <div class="visibilidade"><img src="/arquivos_img/lock-closed 1.png"><p1>Reservadamente</p1></div>
+            <div class="visibilidade" onclick="seleciona('pb')"><img src="/arquivos_img/Vector(3).png"><p1>Público<img src="/arquivos_img/Vector4.png"></p1></div>
+            <div class="visibilidade" onclick="seleciona('pr')"><img src="/arquivos_img/lock-closed 1.png"><p1>Reservadamente</p1></div>
         </nav>
     </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
